@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hangugdrill="http://schemas.android.com/apk/res-auto">
+
+    <!-- Liste des configurations enregistrées -->
+    <!--        android:icon="@drawable/ic_action_selectconfig" -->
+    <item
+        android:id="@+id/action_configlist"
+        android:title=""
+        hangugdrill:showAsAction="ifRoom">
+        <menu>
+        </menu>
+    </item>
+    <!-- Settings -->
+    <item android:id="@+id/action_settings"
+        android:title="Settings"
+        android:icon="@drawable/ic_action_settings"
+        hangugdrill:showAsAction="ifRoom" />
+    <!-- Menu d'actions (gestion de configurations...) -->
+    <item
+        android:id="@+id/action_actions"
+        android:title="Action"
+        android:icon="@drawable/ic_action_overflow"
+        hangugdrill:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/action_configure_savecurrentsettings"
+                android:title="@string/action_savesettings"
+                android:icon="@drawable/ic_action_make_available_offline">
+                </item>
+            <item
+                android:id="@+id/action_configure_manageconfigs"
+                android:title="Manage configurations"
+                android:icon="@drawable/ic_action_view_as_list"
+                >
+            </item>
+            <item
+                android:id="@+id/action_configure_reinitconfigs"
+                android:title="Reinitialize configurations"
+                android:icon="@drawable/ic_action_cancel">
+            </item>
+            <item
+                android:id="@+id/action_configure_help"
+                android:title="Help"
+                android:icon="@drawable/ic_action_help">
+            </item>
+<!--            <item
+                android:id="@+id/action_configure_resetdb"
+                android:title="Reset database">
+            </item>-->
+        </menu>
+    </item>
+</menu>

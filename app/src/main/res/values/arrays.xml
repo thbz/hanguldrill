@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_speed_entries">
+        <item>First learner</item>
+        <item>Very slow</item>
+        <item>Slow</item>
+        <item>Calm</item>
+        <item>Medium</item>
+        <item>Fast</item>
+        <item>Very fast</item>
+        <item>Fluent</item>
+        <item>Native speaker</item>
+        <item>The Flash</item>
+    </string-array>
+    <string-array name="pref_speed_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>7</item>
+        <item>9</item>
+        <item>12</item>
+        <item>15</item>
+        <item>20</item>
+    </string-array>
+    <string-array name="pref_textSize_entries">
+        <item>Small</item>
+        <item>Normal</item>
+        <item>Large</item>
+        <item>Huge</item>
+    </string-array>
+    <string-array name="pref_textSize_values">
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+    </string-array>
+    <string-array name="pref_theme_entries">
+        <item>Black on white</item>
+        <item>White on black</item>
+        <item>Yellow on black</item>
+     </string-array>
+    <string-array name="pref_theme_values">
+        <item>black/white</item>
+        <item>white/black</item>
+        <item>yellow/black</item>
+    </string-array>
+
+    <string-array name="builtin_configurations">
+        <item>Default/6/4/5</item>
+        <item>Words - slow/16/0/3</item>
+        <item>Words - fast/16/0/7</item>
+        <item>Digits - slow/0/16/3</item>
+        <item>Digits - fast/0/16/7</item>
+    </string-array>
+</resources>

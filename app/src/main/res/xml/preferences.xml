@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Configuration"
+        android:key="pref_key_configuration_settings">
+        <EditTextPreference
+            android:key="pref_nbWords"
+            android:title="Number of words"
+            android:summary=""
+            android:defaultValue="@string/pref_default_nbWords" />
+        <EditTextPreference
+            android:key="pref_nbDigits"
+            android:title="Number of digits"
+            android:summary=""
+            android:defaultValue="@string/pref_default_nbDigits" />
+        <ListPreference
+            android:key="pref_speed"
+            android:title="Speed"
+            android:dialogTitle="Choose the speed"
+            android:entries="@array/pref_speed_entries"
+            android:entryValues="@array/pref_speed_values"
+            android:defaultValue="@string/pref_default_speed"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Display"
+        android:key="pref_key_display_settings">
+        <ListPreference
+            android:key="pref_textSize"
+            android:title="Text size"
+            android:dialogTitle="Choose the text size"
+            android:entries="@array/pref_textSize_entries"
+            android:entryValues="@array/pref_textSize_values"
+            android:defaultValue="@string/pref_textSize_default" />
+        <ListPreference
+            android:key="pref_theme"
+            android:title="Theme"
+            android:dialogTitle="Choose a theme"
+            android:entries="@array/pref_theme_entries"
+            android:entryValues="@array/pref_theme_values"
+            android:defaultValue="@string/pref_theme_default" />
+    </PreferenceCategory>
+</PreferenceScreen>
