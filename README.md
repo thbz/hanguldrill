@@ -12,3 +12,6 @@ how many words and/or numbers appear and how much time you will be given to read
 them.
 
 HangulDrill is **free** and displays no advertisement. It does not ask for any special right on your device.
+
+# More information
+More information is available at the project home page: http://hanguk.thbz.org/hanguldrill/
