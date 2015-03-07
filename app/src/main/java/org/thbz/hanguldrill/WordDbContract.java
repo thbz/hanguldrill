@@ -187,31 +187,11 @@ public class WordDbContract {
                 stmt.bindLong(1, state);
                 stmt.executeInsert();
                 stmt.close();
-/*
-                db.setTransactionSuccessful();
-*/
             }
             catch(SQLException exc) {
                 exc.printStackTrace();
                 throw new InternalException("SQLException (" + exc.getMessage() + ")");
             }
-        }
-
-        static protected void resetDb(Context context) throws InternalException {
-            DbHelper dbHelper = DbHelper.getInstance(context);
-
-            if (dbHelper.checkInitState == INITSTATE_INITIALIZING) {
-                MainActivity.doToastMessage("Database is initializing, please try later...");
-                return;
-            }
-
-            SQLiteDatabase db = dbHelper.getDb();
-
-            // Création des tables
-            dbHelper.recreateDatabase(db);
-
-            // Lancement en asynchrone du remplissage des tables
-            dbHelper.launchFillIfNeeded(db);
         }
 
         protected int getDbInitState(SQLiteDatabase db) throws InternalException {
